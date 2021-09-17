@@ -1,9 +1,11 @@
-import sys
+lines = []
 
-a = []
+for line in range(9):
+    line = int(input())
+    lines.append(line)
 
-lines = sys.stdin.readlines()
+m = max(lines)
+i = lines.index(m)
 
-for line in lines:
-    a.append(line)
-    print(a)
+print(m)
+print(i + 1)
